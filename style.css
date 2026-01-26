@@ -1,0 +1,319 @@
+/* Reset and Global Styles for Dark Theme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for contrast */
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header and Navigation */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1a1a1a; /* Slightly lighter dark */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #B22222; /* Dark red accent */
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease; /* Hover animation */
+}
+
+ul li a:hover {
+  color: #B22222; /* Dark red on hover */
+  transform: translateY(-2px); /* Slight lift */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  animation: slideInFromLeft 1.5s ease-out; /* Slide-in animation */
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.hero-content p:first-child {
+  font-size: 1.2rem;
+  color: #B22222; /* Dark red */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #ffffff;
+}
+
+.hero-content p:nth-child(3) {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-hero {
+  display: inline-block;
+  background-color: #B22222; /* Dark red button */
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Hover animation */
+}
+
+.btn-hero:hover {
+  background-color: #8B0000; /* Darker red on hover */
+  transform: scale(1.05); /* Slight scale */
+}
+
+.hero-logo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(178, 34, 34, 0.5); /* Dark red shadow */
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+/* About Section */
+.about {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeInUp 1.5s ease-out; /* Fade-in from bottom */
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #B22222; /* Dark red */
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Project Section */
+.project {
+  padding: 4rem 2rem;
+  background-color: #1a1a1a; /* Slightly lighter dark for contrast */
+  animation: fadeInUp 1.5s ease-out; /* Fade-in from bottom */
+}
+
+.project h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #B22222; /* Dark red */
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #2a2a2a; /* Dark card background */
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Lift on hover */
+  box-shadow: 0 8px 20px rgba(178, 34, 34, 0.5); /* Dark red shadow */
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #B22222; /* Dark red */
+}
+
+.project-info p {
+  font-size: 1rem;
+}
+
+/* Medsos (Social Media) Section */
+.medsos {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeInUp 1.5s ease-out; /* Fade-in from bottom */
+}
+
+.medsos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #B22222; /* Dark red */
+  text-align: center;
+}
+
+.medsos-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.medsos-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: transform 0.3s ease, color 0.3s ease; /* Hover animation */
+}
+
+.medsos-item:hover {
+  transform: scale(1.1); /* Scale on hover */
+  color: #B22222; /* Dark red on hover */
+}
+
+.medsos-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.medsos-item span {
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a; /* Dark footer */
+  text-align: center;
+  padding: 1rem;
+  color: #888;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  ul {
+    gap: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .hero-content {
+    padding-right: 0;
+  }
+
+  .hero-logo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .medsos-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
