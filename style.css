@@ -36,6 +36,15 @@ body::before {
     pointer-events: none;
     z-index: -1;
 }
+html, body {
+    /* Pastikan nama file dan ekstensinya sama persis */
+    cursor: url('Untitled_design-removebg-preview.png'), auto;
+}
+
+/* Biar lebih keren, saat diarahkan ke link kursornya ganti lagi */
+a:hover {
+    cursor: url('Untitled_design-removebg-preview.png'), pointer;
+}
 
 /* Header dan Navigasi */
 header {
