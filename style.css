@@ -217,16 +217,6 @@ a:hover {
     margin-top: 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border: 3px solid #FF0000; /* Border merah Mario */
-    /* Animasi scroll: Awalnya tersembunyi */
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.about.animate {
-    /* Ketika class 'animate' ditambahkan (misalnya via JS saat scroll), munculkan */
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .about h2 {
@@ -252,16 +242,6 @@ a:hover {
     margin-top: 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border: 3px solid #FFD700; /* Border emas */
-    /* Animasi scroll: Awalnya tersembunyi */
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.project.animate {
-    /* Ketika class 'animate' ditambahkan (misalnya via JS saat scroll), munculkan */
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .project h2 {
@@ -288,16 +268,6 @@ a:hover {
     border: 2px solid #FFD700;
     position: relative;
     cursor: pointer; /* Menunjukkan ini bisa diklik */
-    /* Animasi scroll untuk card: Awalnya tersembunyi */
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.project-card.animate {
-    /* Ketika class 'animate' ditambahkan, munculkan */
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .project-card::before {
@@ -356,16 +326,6 @@ a:hover {
     margin-top: 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border: 3px solid #FF0000;
-    /* Animasi scroll: Awalnya tersembunyi */
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.medsos.animate {
-    /* Ketika class 'animate' ditambahkan (misalnya via JS saat scroll), munculkan */
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .medsos h2 {
@@ -390,16 +350,6 @@ a:hover {
     color: #333;
     transition: transform 0.3s;
     cursor: pointer; /* Menunjukkan ini bisa diklik */
-    /* Animasi scroll untuk item: Awalnya tersembunyi */
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.medsos-item.animate {
-    /* Ketika class 'animate' ditambahkan, munculkan */
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .medsos-item:hover {
@@ -433,16 +383,6 @@ footer {
     margin-top: 2rem;
     border-top: 5px solid #FFD700;
     font-size: 0.6rem; /* Dikurangi untuk font pixelated */
-    /* Animasi scroll: Awalnya tersembunyi */
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-footer.animate {
-    /* Ketika class 'animate' ditambahkan (misalnya via JS saat scroll), munculkan */
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* Responsivitas */
@@ -491,4 +431,4 @@ footer.animate {
     .hero-content p {
         font-size: 0.6rem;
     }
-    }
+}
