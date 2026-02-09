@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth; /* Tambahan: Smooth scroll untuk navigasi */
-}
-
 body {
     font-family: 'Press Start 2P', cursive; /* Font pixelated seperti game Mario */
     line-height: 1.6;
@@ -109,23 +105,6 @@ a {
 a:hover {
     color: #FFD700;
     transform: scale(1.1); /* Efek zoom seperti power-up */
-}
-
-/* Tambahan: Animasi saat klik navigasi (efek pulse pada link) */
-a:active {
-    animation: pulse 0.3s ease;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
 }
 
 /* Hero Section */
@@ -238,15 +217,6 @@ a:active {
     margin-top: 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border: 3px solid #FF0000; /* Border merah Mario */
-    /* Tambahan: Scroll animasi side-in dari kiri */
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.about.animate {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .about h2 {
@@ -272,15 +242,6 @@ a:active {
     margin-top: 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border: 3px solid #FFD700; /* Border emas */
-    /* Tambahan: Scroll animasi side-in dari kanan */
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.project.animate {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .project h2 {
@@ -365,15 +326,6 @@ a:active {
     margin-top: 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border: 3px solid #FF0000;
-    /* Tambahan: Scroll animasi side-in dari kiri */
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.medsos.animate {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .medsos h2 {
